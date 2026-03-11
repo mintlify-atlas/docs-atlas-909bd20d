@@ -1,0 +1,112 @@
+{
+  "projectType": "saas",
+  "projectName": "TechXP Registration Module",
+  "projectDescription": "A real-time facial recognition and registration system built with Flask and Face++ API for event management and user authentication.",
+  "theme": "palm",
+  "primaryColor": "#2563eb",
+  "lightColor": "#3b82f6",
+  "darkColor": "#1e40af",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/face-detection",
+              "features/user-registration",
+              "features/multiple-face-capture",
+              "features/face-comparison"
+            ]
+          },
+          {
+            "group": "User Guides",
+            "pages": [
+              "guides/single-user-detection",
+              "guides/multiple-user-detection",
+              "guides/registration-workflow",
+              "guides/admin-dashboard"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/facepp-setup",
+              "configuration/database-setup",
+              "configuration/environment-variables",
+              "configuration/apache-deployment"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "admin/system-reset",
+              "admin/database-backup",
+              "admin/faceset-management",
+              "admin/user-management"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/overview",
+              "api/detection-endpoints",
+              "api/registration-endpoints",
+              "api/admin-endpoints"
+            ]
+          },
+          {
+            "group": "Scripts",
+            "pages": [
+              "api/database-scripts",
+              "api/utility-scripts"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Real-time face detection using camera feed",
+    "Single and multiple user face capture",
+    "Face++ API integration for recognition",
+    "User registration with face tokens",
+    "SQLite database for user management",
+    "Admin dashboard with system controls",
+    "FaceSet backup and restore capabilities",
+    "Face comparison and verification",
+    "Google OAuth authentication for admin",
+    "Image augmentation and processing"
+  ],
+  "publicApiSurface": [
+    "/capture_single - Single face detection endpoint",
+    "/capture_multiple - Multiple face detection endpoint",
+    "/register - User registration with face data",
+    "/register_multiple - Bulk user registration",
+    "/compare_images - Face comparison endpoint",
+    "/reset_system - System reset (OAuth protected)",
+    "/create_database - Database initialization",
+    "/populate_database - Bulk database population",
+    "/verify_faceset - FaceSet verification",
+    "/list_faces - List all registered faces",
+    "/event_info - Event user information",
+    "detect_faces_sync() - Synchronous face detection",
+    "search_face_sync() - Face search with caching",
+    "reset_faceset() - FaceSet reset helper",
+    "reset_sqlite() - Database reset helper"
+  ]
+}
